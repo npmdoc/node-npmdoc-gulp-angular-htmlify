@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/pgilad/gulp-angular-htmlify"
-
-    >gulp-angular-htmlify (v2.3.0)</a>
+    <a href="https://github.com/pgilad/gulp-angular-htmlify">gulp-angular-htmlify (v2.3.0)</a>
 </h1>
 <h4>Change your ng-attributes to data-ng-attributes for HTML5 validation</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-angular-htmlify">module gulp-angular-htmlify</a><ol>
 
@@ -88,7 +81,7 @@
     <li>description and source-code<pre class="apidocCodePre">gulp-angular-htmlify = function (params) {
     params = params || {};
     var verbose = Boolean(params.verbose);
-    var htmlify = require(&#x27;angular-html5&#x27;)({
+    var htmlify = require('angular-html5')({
         customPrefixes: params.customPrefixes
     });
 
@@ -99,19 +92,19 @@
         }
 
         if (file.isStream()) {
-            cb(new pluginError(pluginName, &#x27;Streaming not supported&#x27;));
+            cb(new pluginError(pluginName, 'Streaming not supported'));
             return;
         }
 
-        var data = file.contents.toString(&#x27;utf8&#x27;);
+        var data = file.contents.toString('utf8');
         //if ng-directives exist
         if (htmlify.test(data)) {
             //replace contents and assign them back to stream contents
             file.contents = new Buffer(htmlify.replace(data));
             if (verbose) {
                 //get filename or unknown
-                var filename = gutil.colors.magenta(file.path || &#x27;unknown&#x27;);
-                gutil.log(gutil.colors.blue(pluginName), &#x27;found and replaced ng-directives in &#x27; + filename);
+                var filename = gutil.colors.magenta(file.path || 'unknown');
+                gutil.log(gutil.colors.blue(pluginName), 'found and replaced ng-directives in ' + filename);
             }
         }
 
@@ -131,3 +124,4 @@
     ]
 </div>
 </div>
+</body></html>

@@ -61,12 +61,67 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-angular-htmlify">module gulp-angular-htmlify</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-angular-htmlify.gulp-angular-htmlify">
+            function <span class="apidocSignatureSpan"></span>gulp-angular-htmlify
+            <span class="apidocSignatureSpan">(params)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-angular-htmlify" id="apidoc.module.gulp-angular-htmlify">module gulp-angular-htmlify</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-angular-htmlify.gulp-angular-htmlify" id="apidoc.element.gulp-angular-htmlify.gulp-angular-htmlify">
+        function <span class="apidocSignatureSpan"></span>gulp-angular-htmlify
+        <span class="apidocSignatureSpan">(params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-angular-htmlify = function (params) {
+    params = params || {};
+    var verbose = Boolean(params.verbose);
+    var htmlify = require(&#x27;angular-html5&#x27;)({
+        customPrefixes: params.customPrefixes
+    });
+
+    return through.obj(function(file, enc, cb) {
+        if (file.isNull()) {
+            cb(null, file);
+            return;
+        }
+
+        if (file.isStream()) {
+            cb(new pluginError(pluginName, &#x27;Streaming not supported&#x27;));
+            return;
+        }
+
+        var data = file.contents.toString(&#x27;utf8&#x27;);
+        //if ng-directives exist
+        if (htmlify.test(data)) {
+            //replace contents and assign them back to stream contents
+            file.contents = new Buffer(htmlify.replace(data));
+            if (verbose) {
+                //get filename or unknown
+                var filename = gutil.colors.magenta(file.path || &#x27;unknown&#x27;);
+                gutil.log(gutil.colors.blue(pluginName), &#x27;found and replaced ng-directives in &#x27; + filename);
+            }
+        }
+
+        //push back file to stream
+        cb(null, file);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
