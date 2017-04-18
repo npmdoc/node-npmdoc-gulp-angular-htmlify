@@ -1,9 +1,14 @@
-# api documentation for  [gulp-angular-htmlify (v2.3.0)](https://github.com/pgilad/gulp-angular-htmlify)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-angular-htmlify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-angular-htmlify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-angular-htmlify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-angular-htmlify)
+# npmdoc-gulp-angular-htmlify
+
+#### api documentation for  [gulp-angular-htmlify (v2.3.0)](https://github.com/pgilad/gulp-angular-htmlify)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-angular-htmlify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-angular-htmlify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-angular-htmlify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-angular-htmlify)
+
 #### Change your ng-attributes to data-ng-attributes for HTML5 validation
 
-[![NPM](https://nodei.co/npm/gulp-angular-htmlify.png?downloads=true)](https://www.npmjs.com/package/gulp-angular-htmlify)
+[![NPM](https://nodei.co/npm/gulp-angular-htmlify.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-angular-htmlify)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-angular-htmlify/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-angular-htmlify_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-angular-htmlify/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-angular-htmlify/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-angular-htmlify/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-angular-htmlify/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-angular-htmlify/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-angular-htmlify/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Gilad Peleg",
-        "email": "giladp007@gmail.com",
         "url": "http://giladpeleg.com"
     },
     "bugs": {
@@ -60,13 +64,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "pgilad",
-            "email": "giladp007@gmail.com"
+            "name": "pgilad"
         }
     ],
     "name": "gulp-angular-htmlify",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/pgilad/gulp-angular-htmlify.git"
@@ -78,16 +80,6 @@
     "version": "2.3.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-angular-htmlify](#apidoc.module.gulp-angular-htmlify)
-
-
-
-# <a name="apidoc.module.gulp-angular-htmlify"></a>[module gulp-angular-htmlify](#apidoc.module.gulp-angular-htmlify)
 
 
 
