@@ -1,6 +1,6 @@
 # npmdoc-gulp-angular-htmlify
 
-#### api documentation for  [gulp-angular-htmlify (v2.3.0)](https://github.com/pgilad/gulp-angular-htmlify)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-angular-htmlify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-angular-htmlify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-angular-htmlify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-angular-htmlify)
+#### basic api documentation for  [gulp-angular-htmlify (v2.3.0)](https://github.com/pgilad/gulp-angular-htmlify)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-angular-htmlify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-angular-htmlify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-angular-htmlify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-angular-htmlify)
 
 #### Change your ng-attributes to data-ng-attributes for HTML5 validation
 
@@ -77,7 +77,8 @@
         "test": "mocha -R spec ./tests/*.js",
         "watchTest": "mocha -R spec -w ./tests/*.js"
     },
-    "version": "2.3.0"
+    "version": "2.3.0",
+    "bin": {}
 }
 ```
 
